@@ -132,18 +132,18 @@ Menghapus isi dari console atau terminal.
 
 ### a. `cat`
 
-It can be used for the following purposes under UNIX or Linux.
+Ini dapat digunakan untuk tujuan berikut di dalam UNIX atau Linux.
 
-* Display text files on screen
-* Copy text files
-* Combine text files
-* Create new text files
+* Menampilkan file teks di terminal
+* Menyalin file teks
+* Menggabungkan 2 file teks
+* Membuat file teks baru
 
 ```bash
 cat filename
 cat file1 file2
 cat file1 file2 > newcombinedfile
-cat < file1 > file2 #copy file1 to file2 file1 > file2 #copy file1 to file2
+cat < file1 > file2 #salin file1 ke file2 file1 > file2 #salin file1 ke file2
 ```
 
 ### b. `chmod`
@@ -164,7 +164,7 @@ chown -options user:group filename
 
 ### d. `cp`
 
-Copies a file from one location to other.
+Menyalin file dari satu lokasi ke lokasi lain.
 
 ```bash
 cp filename1 filename2
@@ -172,9 +172,15 @@ cp filename1 filename2
 
 Dimana `filename1` adalah file sumbernya dan `filename2` adalah file destinasinya.
 
+Gunakan opsi `-r` untuk menyalin direktori.
+
+```bash
+cp -r dir1 dir2
+```
+
 ### e. `diff`
 
-Compares files, and lists their differences.
+Membandingkan file, dan membuat daftar perbedaannya.
 
 ```bash
 diff filename1 filename2
@@ -182,7 +188,7 @@ diff filename1 filename2
 
 ### f. `file`
 
-Determine file type.
+Menentukan tipe atau jenis dari suatu file.
 
 ```bash
 file filename
@@ -212,7 +218,7 @@ find /home/user1 -name '*.png'
 
 ### h. `gunzip`
 
-Un-compresses files compressed by gzip.
+Membuka kompresi file yang dikompresi oleh gzip.
 
 ```bash
 gunzip filename
@@ -220,7 +226,7 @@ gunzip filename
 
 ### i. `gzcat`
 
-Lets you look at gzipped file without actually having to gunzip it.
+Memungkinkan Anda melihat file gzip tanpa harus melakukan gunzip.
 
 ```bash
 gzcat filename
@@ -228,7 +234,7 @@ gzcat filename
 
 ### j. `gzip`
 
-Compresses files.
+Kompres file.
 
 ```bash
 gzip filename
@@ -236,7 +242,7 @@ gzip filename
 
 ### k. `head`
 
-Outputs the first 10 lines of file
+Menampilkan informasi dari 10 baris pertama suatu file.
 
 ```bash
 head filename
@@ -244,13 +250,13 @@ head filename
 
 ### l. `lpq`
 
-Check out the printer queue.
+Melihat antrian printer.
 
 ```bash
 lpq
 ```
 
-Example:
+Contoh:
 
 ```bash
 $ lpq
@@ -261,7 +267,7 @@ active  adnanad 59      demo                            399360 bytes
 
 ### m. `lpr`
 
-Print the file.
+Digunakan untuk print suatu file.
 
 ```bash
 lpr filename
@@ -269,7 +275,7 @@ lpr filename
 
 ### n. `lprm`
 
-Remove something from the printer queue.
+Menghapus job dari antrian printer.
 
 ```bash
 lprm jobnumber
@@ -277,7 +283,7 @@ lprm jobnumber
 
 ### o. `ls`
 
-Lists your files. `ls` has many options: `-l` lists files in 'long format', which contains the exact size of the file, who owns the file, who has the right to look at it, and when it was last modified. `-a` lists all files, including hidden files. For more information on this command check this [link](https://ss64.com/bash/ls.html).
+Menampilkan list file atau direktori. `ls` memiliki banyak opsi: `-l` mencantumkan file dalam 'format panjang', yang berisi ukuran file yang tepat, siapa pemilik file, siapa yang berhak melihatnya, dan kapan file tersebut terakhir dimodifikasi. `-a` mencantumkan semua berkas, termasuk berkas tersembunyi. Untuk informasi lebih lanjut mengenai perintah ini, lihat [link] ini (https://ss64.com/bash/ls.html).
 
 ```bash
 ls option
@@ -298,7 +304,7 @@ drwxr-xr-x  17 adnan  staff     578 Mar 27 23:36 .git
 
 ### p. `more`
 
-Shows the first part of a file (move with space and type q to quit).
+Menampilkan bagian pertama dari file (gunakan spasi untuk navigasi dan ketik q untuk keluar).
 
 ```bash
 more filename
@@ -306,7 +312,7 @@ more filename
 
 ### q. `mv`
 
-Moves a file from one location to other.
+Memindahkan file dari satu lokasi ke lokasi lainnya.
 
 ```bash
 mv filename1 filename2
@@ -332,7 +338,7 @@ rm filename
 
 ### s. `tail`
 
-Outputs the last 10 lines of file. Use `-f` to output appended data as the file grows.
+Mengeluarkan 10 baris terakhir dari file. Gunakan `-f` untuk menampilkan data yang ditambahkan saat file bertambah.
 
 ```bash
 tail filename
@@ -346,7 +352,7 @@ Memperbarui akses dan time stamps dari file. Kita juga bisa memanfaatkan touch u
 touch filename
 ```
 
-Example:
+Contoh:
 
 ```bash
 touch trick.md
@@ -581,7 +587,7 @@ amet.
 
 ### g. `grep`
 
-Looks for text inside files. You can use grep to search for lines of text that match one or many regular expressions, and outputs only the matching lines.
+Mencari teks di dalam file. Anda dapat menggunakan grep untuk mencari baris teks yang cocok dengan satu atau banyak ekspresi reguler, dan hanya mengeluarkan baris yang cocok.
 
 ```bash
 grep pola namafile
@@ -817,7 +823,7 @@ sort example.txt | uniq -c
 
 ### m. `wc`
 
-Tells you how many lines, words and characters there are in a file.
+Memberitahukan kepada Kita berapa banyak baris, kata, dan karakter yang ada dalam file.
 
 ```bash
 wc filename
@@ -844,13 +850,13 @@ Di mana `7459` adalah jumlah baris, `15915` adalah jumlah kata, dan `398400` ada
 
 ### a. `cd`
 
-Moves you from one directory to other. Running this
+Navigasi dari satu direktori ke direktori lainnya. Coba jalankan ini:
 
 ```bash
 cd
 ```
 
-memindahkan Anda ke direktori home. Perintah ini menerima sebuah `dirname` opsional, yang akan memindahkan Anda ke direktori tersebut.
+memindahkan Kita ke direktori home. Perintah ini menerima sebuah `dirname` opsional, yang akan memindahkan Anda ke direktori tersebut.
 
 ```bash
 cd dirname
@@ -858,7 +864,7 @@ cd dirname
 
 ### b. `mkdir`
 
-Makes a new directory.
+Membuat direktori baru.
 
 ```bash
 mkdir dirname
@@ -870,7 +876,7 @@ Anda dapat menggunakan ini untuk membuat beberapa direktori sekaligus di dalam d
 mkdir 1stDirectory 2ndDirectory 3rdDirectory
 ```
 
-You can also use this to create parent directories at the same time with the -p (or --parents) flag. For instance, if you wanted a directory named 'project1' in another subdirectory at '/samples/bash/projects/', you could run:
+Anda juga dapat menggunakan ini untuk membuat direktori utama pada saat yang sama dengan flag -p (atau --parents). Sebagai contoh, jika Anda menginginkan direktori bernama 'project1' di subdirektori lain di '/samples/bash/projects/', Anda dapat menjalankan:
 
 ```bash
 mkdir -p /samples/bash/projects/project1
@@ -882,7 +888,7 @@ Jika salah satu direktori ini belum ada, maka direktori tersebut akan dibuat jug
 
 ### c. `pwd`
 
-Tells you which directory you currently are in.
+Memberi tahu Anda di direktori mana Anda saat ini berada (posisi saat ini).
 
 ```bash
 pwd
