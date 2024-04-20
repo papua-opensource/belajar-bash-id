@@ -943,7 +943,7 @@ Menunjukkan penggunaan disk.
 
 ### e. `dig`
 
-Gets DNS information for domain.
+Mendapatkan informasi DNS dari suatu domain.
 
 ```bash
 dig domain
@@ -958,8 +958,8 @@ du [option] [filename|directory]
 ```
 
 Options:
-* `-h` (human readable) Displays output it in kilobytes (K), megabytes (M) and gigabytes (G).
-* `-s` (supress or summarize) Outputs total disk space of a directory and supresses reports for subdirectories.
+* `-h` (human readable) Menampilkan output dalam kilobyte (K), megabyte (M), dan gigabyte (G).
+* `-s` (supress or summarize) Menghasilkan total ruang disk dari suatu direktori dan menyembunyikan laporan untuk subdirektori.
 
 Example:
 
@@ -974,7 +974,7 @@ Menampilkan pekerjaan terbaru di latar depan (foreground).
 
 ### h. `finger`
 
-Displays information about user.
+Menampilkan informasi dari pengguna tertentu.
 
 ```bash
 finger username
@@ -986,7 +986,7 @@ Mencantumkan pekerjaan yang berjalan di latar belakang, dengan memberikan penomo
 
 ### j. `last`
 
-Lists your last logins of specified user.
+Mencantumkan login terakhir dari pengguna tertentu.
 
 ```bash
 last yourUsername
@@ -994,7 +994,7 @@ last yourUsername
 
 ### k. `man`
 
-Shows the manual for specified command.
+`man` atau `manual` digunakan untuk menampilkan panduan dari perintah tertentu.
 
 ```bash
 man command
@@ -1006,7 +1006,7 @@ Memungkinkan pengguna yang masuk saat ini untuk mengubah kata sandi mereka (pass
 
 ### m. `ping`
 
-Pings host and outputs results.
+Mem-ping host dan menampilkan hasilnya.
 
 ```bash
 ping host
@@ -1014,13 +1014,13 @@ ping host
 
 ### n. `ps`
 
-Lists your processes.
+Menampilkan daftar proses Anda.
 
 ```bash
 ps -u yourusername
 ```
 
-Use the flags ef. e for every process and f for full listing.
+Gunakan flag ef. e untuk setiap proses dan f untuk daftar lengkap.
 
 ```bash
 ps -ef
@@ -1028,7 +1028,7 @@ ps -ef
 
 ### o. `quota`
 
-Shows what your disk quota is.
+Menampilkan berapa kuota disk yang dimiliki.
 
 ```bash
 quota -v
@@ -1051,7 +1051,7 @@ scp user@host:directory/source_file target_file
 scp -r user@host:directory/source_folder target_folder
 ```
 
-This command also accepts an option `-P` that can be used to connect to specific port.
+Perintah ini juga menerima opsi `-P` yang dapat digunakan untuk konek ke port tertentu.
 
 ```bash
 scp -P port user@host:directory/source_file target_file
@@ -1059,13 +1059,13 @@ scp -P port user@host:directory/source_file target_file
 
 ### q. `ssh`
 
-ssh (SSH client) is a program for logging into and executing commands on a remote machine.
+ssh (SSH client) adalah program untuk mengakses mesin(komputer) dan menjalankan perintah pada mesin tersebut.
 
 ```bash
 ssh user@host
 ```
 
-This command also accepts an option `-p` that can be used to connect to specific port.
+Perintah ini juga menerima opsi `-p` yang dapat digunakan untuk konek ke port tertentu.
 
 ```bash
 ssh -p port user@host
@@ -1077,7 +1077,7 @@ Menampilkan proses Anda yang sedang aktif.
 
 ### s. `uname`
 
-Shows kernel information.
+Menampilkan informasi kernel.
 
 ```bash
 uname -a
@@ -1128,8 +1128,8 @@ Curl adalah alat bantu untuk meminta atau mengirim data menggunakan sintaks URL.
 curl url
 ```
 
-Use  `-X` or `--request` to specify which method you would like invoke (GET, POST, DELETE, ...).
-Use `-d <data>` or `--data <data>` to POST data on given URL.
+Gunakan `-X` atau `--request` untuk menentukan metode mana yang ingin Anda panggil (GET, POST, DELETE, ...).
+Gunakan `-d <data>` atau `--data <data>` untuk POST data pada URL tertentu.
 
 ## 1.5. Operasi Pemantauan Proses
 
@@ -1144,7 +1144,7 @@ Use `-d <data>` or `--data <data>` to POST data on given URL.
 
 ### a. `kill`
 
-Kills (ends) the processes with the ID you gave.
+Mengakhiri proses dengan ID yang Anda berikan.
 
 ```bash
 kill PID
@@ -1152,7 +1152,7 @@ kill PID
 
 ### b. `killall`
 
-Kill all processes with the name.
+Mengakhiri semua proses berdasarkan namanya.
 
 ```bash
 killall namaproses
@@ -1174,7 +1174,7 @@ nohup adalah singkatan dari "No Hang Up". Ini memungkinkan untuk menjalankan per
 nohup command
 ```
 
-Combine it with `&` to create background processes
+Kombinasikan dengan `&` untuk membuat proses latar belakang.s
 
 ```bash
 nohup command &
@@ -1235,10 +1235,10 @@ ${#array[@]}
 Bash juga mendukung kondisi terner. Lihat beberapa contoh di bawah ini.
 
 ```bash
-${varname:-word}    # if varname exists and isn't null, return its value; otherwise return word
-${varname:=word}    # if varname exists and isn't null, return its value; otherwise set it word and then return its value
-${varname:+word}    # if varname exists and isn't null, return word; otherwise return null
-${varname:offset:length}    # performs substring expansion. It returns the substring of $varname starting at offset and up to length characters
+${varname:-word}    # jika varname ada dan bukan null, kembalikan nilainya; jika tidak, kembalikan kata
+${varname:=word}    # jika varname ada dan bukan null, kembalikan nilainya; jika tidak, setel kata dan kembalikan nilainya
+${varname:+word}    # jika varname ada dan bukan null, kembalikan kata; jika tidak, kembalikan null
+${varname:offset:length}   # melakukan ekspansi substring. Ini mengembalikan substring dari $varname mulai dari offset dan sampai dengan panjang karakter
 ```
 
 ## 2.3 Substitusi String
