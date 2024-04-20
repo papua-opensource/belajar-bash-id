@@ -1,7 +1,6 @@
 ## Daftar Isi
 
-1. [Operasi Dasar](#1-operasi-dasar)
-
+1. [Operasi Dasar](#1-operasi-dasar)<br>
     1.1. [Operasi File](#11-operasi-file)
     <br>
     1.2. [Operasi Teks](#12-operasi-teks)
@@ -12,8 +11,7 @@
     <br>
     1.5. [Operasi Monitoring Proses](#15-operasi-monitoring-proses)
 
-2. [Basic Shell Programming](#2-basic-shell-programming)
-
+2. [Basic Shell Programming](#2-basic-shell-programming)<br>
     2.1. [Variabel](#21-variabel)
     <br>
     2.2. [Array](#22-array)
@@ -27,7 +25,6 @@
     2.6. [Pernyataan Kondisional](#26-pernyataan-kondisional)
     <br>
     2.7. [Pengulangan](#27-pengulangan)
-
 3. [Trik](#3-trik)
 4. [Debugging](#4-debugging)
 5. [Multi-threading](#5-multi-threading)
