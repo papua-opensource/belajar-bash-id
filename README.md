@@ -1524,8 +1524,7 @@ wait
 
 ## Kontribusi
 
-* Silahkan membaca [panduan konribusi](CONTRIBUTING.md) sebelum menambahkan referensi atau terjemahan baru.
-* Spread the word
+* Silahkan membaca [panduan kontribusi](CONTRIBUTING.md) sebelum menambahkan referensi atau terjemahan baru.
 
 ## Referensi
 
